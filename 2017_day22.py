@@ -1,9 +1,3 @@
-
-# coding: utf-8
-
-# In[287]:
-
-
 fname = "inputs/2017_day22.txt"
 with open(fname) as f:
         lines = f.readlines()
