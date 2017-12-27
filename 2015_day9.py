@@ -22,8 +22,7 @@ min_dist, max_dist = 999999, 0
 
 # determine route distance for each permutation
 for p in perms:
-    p_dist = 0
-    for i in range(len(p)-1): p_dist += int(distances[p[i:i+2]])
+    p_dist = sum([int(distances[p[i:i+2]]) for i in range(len(p)-1)])
     if p_dist < min_dist: 
         min_dist, the_combo = p_dist, p
     elif p_dist > max_dist: 
